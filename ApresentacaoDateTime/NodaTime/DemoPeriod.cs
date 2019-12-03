@@ -14,7 +14,6 @@ namespace ApresentacaoDateTime.NodaTime
             var january = new LocalDate(2019, 1, 1);
             var february = new LocalDate(2019, 2, 1);
 
-            // 1 mês representou valores diferentes para cada uma das datas
             Console.WriteLine(january.Plus(period));
             Console.WriteLine(february.Plus(period));
         }
