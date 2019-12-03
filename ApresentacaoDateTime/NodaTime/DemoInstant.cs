@@ -13,9 +13,11 @@ namespace ApresentacaoDateTime.NodaTime
 
             var now = SystemClock.Instance.GetCurrentInstant();
 
-            // O PADRÃO é UTC
+            // O PADRÃO é UTC, mas instant não tem informação de fuso horário
             Console.WriteLine("Now padrão: " + now);
-            Console.WriteLine("Now UTC: " + now.InUtc());
+
+            var zonedNow = now.InUtc();
+            Console.WriteLine("Now UTC: " + zonedNow);
 
             //// A conversão é possível com o offset em horas
             //var timezone = DateTimeZone.ForOffset(Offset.FromHours(-5));
