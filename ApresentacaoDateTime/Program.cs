@@ -8,8 +8,8 @@ namespace ApresentacaoDateTime
     {
         static void Main(string[] args)
         {
-            //var demoDateTime = new DemoDateTime();
-            //demoDateTime.Run();
+            var demoDateTime = new DemoDateTime();
+            demoDateTime.Run();
 
             //var demoDateTimeOffset = new DemoDateTimeOffset();
             //demoDateTimeOffset.Run();
@@ -27,8 +27,8 @@ namespace ApresentacaoDateTime
             //var demoDuration = new DemoDuration();
             //demoDuration.Run();
 
-            var demoPeriod = new DemoPeriod();
-            demoPeriod.Run();
+            //var demoPeriod = new DemoPeriod();
+            //demoPeriod.Run();
 
             Console.ReadKey();
         }
